@@ -20,4 +20,4 @@ If you like this project, please consider supporting it through a [PayPal donati
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [Luis Marsiglia](https://github.com/marsidev)
+[MIT](./LICENSE) License © 2023 [Luis Marsiglia](https://github.com/marsidev)
