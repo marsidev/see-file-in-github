@@ -13,8 +13,8 @@ export function updateStatusBarItem(
 			? 'Bitbucket'
 			: 'GitHub'
 
-		const icon = result.logs.isGitHubRepo ? '$(github)' : ''
-		item.text = icon ? `${icon} See in ${provider}` : `See in ${provider}`
+		const icon = result.logs.isGitHubRepo ? '$(github)' : '$(file-symlink-file) '
+		item.text = `${icon} See in ${provider}`
 		item.tooltip = `See file in ${provider}`
 
 		return item.show()
