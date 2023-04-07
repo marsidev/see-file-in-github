@@ -15,6 +15,8 @@ describe('formatBitbucketRemoteUrl', () => {
 
 	it('throws an error for an input URL with an unrecognized format', () => {
 		const inputUrl = 'https://github.com/myusername/myrepo'
-		expect(() => formatBitbucketRemoteUrl(inputUrl)).toThrow('Invalid Bitbucket URL format.')
+		expect(() => formatBitbucketRemoteUrl(inputUrl)).toThrow(
+			`Invalid Bitbucket URL format: ${inputUrl}`,
+		)
 	})
 })
