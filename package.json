@@ -1,11 +1,11 @@
 {
 	"publisher": "marsi",
 	"name": "see-file-in-github",
-	"displayName": "See file in GitHub.",
+	"displayName": "Git File Viewer Button (GitHub, GitLab, Bitbucket)",
 	"version": "1.0.1",
 	"private": true,
 	"packageManager": "pnpm@8.1.1",
-	"description": "Add a button on the status bar to see the current file in GitHub.",
+	"description": "Open the current file in GitHub, GitLab or Bitbucket through a button in the status bar.",
 	"author": "Luis Marsiglia <marsiglia.business@gmail.com>",
 	"license": "MIT",
 	"homepage": "https://github.com/marsidev/see-file-in-github#readme",
