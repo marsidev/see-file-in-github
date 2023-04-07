@@ -1,67 +1,84 @@
 {
-  "publisher": "antfu",
-  "name": "open-in-github-button",
-  "displayName": "Open in GitHub Button",
-  "version": "0.1.1",
-  "private": true,
-  "packageManager": "pnpm@8.1.1",
-  "description": "Add a button to go to the GitHub on the status bar",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
-  "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/vscode-open-in-github-button#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/antfu/vscode-open-in-github-button"
-  },
-  "bugs": {
-    "url": "https://github.com/antfu/vscode-open-in-github-button/issues"
-  },
-  "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
-  },
-  "categories": [
-    "Other"
-  ],
-  "main": "./dist/index.js",
-  "icon": "res/icon.png",
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "vscode": "^1.77.0"
-  },
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "extensionPack": [
-    "fabiospampinato.vscode-open-in-github"
-  ],
-  "scripts": {
-    "build": "tsup src/index.ts --external vscode",
-    "dev": "nr build --watch",
-    "lint": "eslint .",
-    "vscode:prepublish": "nr build",
-    "publish": "vsce publish --no-dependencies",
-    "pack": "vsce package --no-dependencies",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp && nr publish"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^0.38.4",
-    "@antfu/ni": "^0.21.2",
-    "@types/node": "^18.15.11",
-    "@types/vscode": "^1.77.0",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.37.0",
-    "esno": "^0.16.3",
-    "pnpm": "^8.1.1",
-    "rimraf": "^4.4.1",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.3",
-    "vite": "^4.2.1",
-    "vitest": "^0.29.8",
-    "vsce": "^2.15.0"
-  }
+	"publisher": "marsi",
+	"name": "see-file-in-github",
+	"displayName": "See file in GitHub.",
+	"version": "1.0.0",
+	"private": true,
+	"packageManager": "pnpm@8.1.1",
+	"description": "Add a button on the status bar to see the current file in GitHub.",
+	"author": "Luis Marsiglia <marsiglia.business@gmail.com>",
+	"license": "MIT",
+	"homepage": "https://github.com/marsidev/see-file-in-github#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/marsidev/see-file-in-github"
+	},
+	"bugs": {
+		"url": "https://github.com/marsidev/see-file-in-github/issues"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "./dist/index.js",
+	"icon": "res/icon.png",
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --external vscode",
+		"dev": "pnpm run build --watch",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"vscode:prepublish": "pnpm run build",
+		"publish": "vsce publish --no-dependencies",
+		"pack": "vsce package --no-dependencies",
+		"test": "vitest",
+		"typecheck": "tsc --noEmit",
+		"release": "bumpp && pnpm run publish"
+	},
+	"devDependencies": {
+		"@antfu/ni": "^0.21.2",
+		"@types/absolute": "^0.0.29",
+		"@types/lodash.sortby": "^4.7.7",
+		"@types/node": "^18.15.11",
+		"@types/vscode": "^1.57.0",
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"@typescript-eslint/parser": "^5.57.1",
+		"absolute": "^0.0.1",
+		"bumpp": "^9.1.0",
+		"eslint": "^8.37.0",
+		"eslint-config-marsi": "^1.1.1",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-import-resolver-typescript": "^3.5.5",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-n": "^15.7.0",
+		"eslint-plugin-promise": "^6.1.1",
+		"esno": "^0.16.3",
+		"lodash.sortby": "^4.7.0",
+		"pnpm": "^8.1.1",
+		"prettier": "^2.8.7",
+		"rimraf": "^4.4.1",
+		"simple-git": "^3.17.0",
+		"tsup": "^6.7.0",
+		"typescript": "^5.0.3",
+		"vite": "^4.2.1",
+		"vitest": "^0.29.8",
+		"vsce": "^2.15.0"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"eslint-plugin-react"
+			]
+		}
+	}
 }

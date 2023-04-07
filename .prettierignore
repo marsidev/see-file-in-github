@@ -1,0 +1,6 @@
+.vscode
+dist
+.next
+*.yaml
+*.yml
+*.md

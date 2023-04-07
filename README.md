@@ -2,24 +2,27 @@
   <img src="./res/icon.png" height="160"/>
 </p>
 
-<h1 align="center">VS Code Open in GitHub Button</h1>
+<div align="center">
+  <h1>See file in GitHub</h1>
+  <sub>VS Code extension for opening files on GitHub through a button in the status bar.</sub>
+  <br />
+  <br />
+  <a href="https://marketplace.visualstudio.com/items?itemName=marsi.see-file-in-github" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/marsi.see-file-in-github.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+</div>
 
-<a href="https://marketplace.visualstudio.com/items?itemName=antfu.open-in-github-button" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/antfu.open-in-github-button.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+![Icon preview](preview.png)
 
-Add a button to go to the GitHub on the status bar.
+Built on top of [VS Code Open in GitHub Button](https://github.com/antfu/vscode-open-in-github-button).
 
-![](https://user-images.githubusercontent.com/11247099/230333941-29312ebb-432d-46be-bc26-c2ff4e5d284c.png)
+<!-- ## To do
 
-Built on top of [Open in GitHub](https://github.com/fabiospampinato/vscode-open-in-github).
+- [ ] Add tests
+- [ ] Add support for other git providers (GitLab, BitBucket, etc) -->
 
-## Sponsors
+## Support
 
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.png'/>
-  </a>
-</p>
+If you like this project, please consider supporting it through a [PayPal donation](https://paypal.me/marsigliacr). :blush:
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2022 [Luis Marsiglia](https://github.com/marsidev)
