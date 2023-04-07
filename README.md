@@ -14,11 +14,6 @@
 
 Built on top of [VS Code Open in GitHub Button](https://github.com/antfu/vscode-open-in-github-button).
 
-<!-- ## To do
-
-- [ ] Add tests
-- [ ] Add support for other git providers (GitLab, BitBucket, etc) -->
-
 ## Support
 
 If you like this project, please consider supporting it through a [PayPal donation](https://paypal.me/marsigliacr). 😊

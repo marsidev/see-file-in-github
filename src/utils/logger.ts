@@ -28,7 +28,7 @@ function log(type: LogType, message: string, ...args: any[]): void {
 	const logMessage = `%c ${message} %c`
 	const logArgs = [`background-color: ${colors[type]}; color: white; padding: 2px;`, '', ...args]
 
-	fn(logMessage, ...logArgs)
+	fn(logMessage, ...[...logArgs, { timestamp: Date.now() }])
 }
 
 export const Logger = {
