@@ -2,7 +2,7 @@
 	"publisher": "marsi",
 	"name": "see-file-in-github",
 	"displayName": "See file in GitHub.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": true,
 	"packageManager": "pnpm@8.1.1",
 	"description": "Add a button on the status bar to see the current file in GitHub.",
