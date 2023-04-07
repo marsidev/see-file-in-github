@@ -8,7 +8,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	const DEV_MODE = context.extensionMode !== vscode.ExtensionMode.Production
 	const showLogs = DEV_MODE
 
-	vscode.commands.registerCommand('seeInGitHub.open', async () => {
+	vscode.commands.registerCommand('gitFileViewerButton.open', async () => {
 		const result = await getRemoteRepositoryUri()
 		if (result.success) {
 			showLogs && Logger.success({ uri: result.uri, ...result.logs })
@@ -22,12 +22,12 @@ export async function activate(context: vscode.ExtensionContext) {
 	const result = await getRemoteRepositoryUri()
 
 	const statusBar = window.createStatusBarItem(vscode.StatusBarAlignment.Left, 0)
-	statusBar.command = 'seeInGitHub.open'
+	statusBar.command = 'gitFileViewerButton.open'
 
 	updateStatusBarItem(statusBar, result)
 	showLogs && Logger.log('init', result.logs)
 
-	// toggle github icon visibility
+	// toggle icon visibility
 	window.onDidChangeActiveTextEditor(async editor => {
 		if (!editor) return
 

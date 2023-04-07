@@ -16,10 +16,10 @@ const methods = {
 }
 
 const messages = {
-	log: '[seeInGitHub][Log]',
-	success: '[seeInGitHub][Success]',
-	error: '[seeInGitHub][Error]',
-	warn: '[seeInGitHub][Warning]',
+	log: '[gitFileViewerButton][Log]',
+	success: '[gitFileViewerButton][Success]',
+	error: '[gitFileViewerButton][Error]',
+	warn: '[gitFileViewerButton][Warning]',
 }
 
 function log(type: LogType, message: string, ...args: any[]): void {
