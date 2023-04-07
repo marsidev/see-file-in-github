@@ -7,7 +7,7 @@
   <sub>VS Code extension for opening files on GitHub, Bitbucket, and GitLab through a button in the status bar.</sub>
   <br />
   <br />
-  <a href="https://marketplace.visualstudio.com/items?itemName=marsi.vscode-git-file-viewer-button" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/marsi.vscode-git-file-viewer-button.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=marsi.git-file-viewer-button" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/marsi.git-file-viewer-button.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
   <br />
   <br />
   <img src="./preview.png" alt="Status bar icon preview" />
