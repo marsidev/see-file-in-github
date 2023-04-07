@@ -2,7 +2,7 @@
 	"publisher": "marsi",
 	"name": "git-file-viewer-button",
 	"displayName": "Git File Viewer Button (GitHub, GitLab, Bitbucket)",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"private": true,
 	"packageManager": "pnpm@8.1.1",
 	"description": "Open the current file in GitHub, GitLab or Bitbucket through a button in the status bar.",
