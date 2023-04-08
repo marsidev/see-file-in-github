@@ -44,7 +44,7 @@
 		"test": "vitest",
 		"typecheck": "tsc --noEmit",
 		"release": "bumpp && pnpm run publish",
-		"l10n:gen": "npx @vscode/l10n-dev export --outDir ./l10n ./src"
+		"l10n:gen": "npx @vscode/l10n-dev export --outDir ./l10n ./src && prettier --write ./l10n/**/*.json"
 	},
 	"dependencies": {
 		"@vscode/l10n": "^0.0.13"
