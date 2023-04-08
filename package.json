@@ -3,7 +3,7 @@
 	"name": "git-file-viewer-button",
 	"displayName": "Git File Viewer Button (GitHub, GitLab, Bitbucket)",
 	"description": "%description%",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"private": true,
 	"packageManager": "pnpm@8.1.1",
 	"author": "Luis Marsiglia <marsiglia.business@gmail.com>",
