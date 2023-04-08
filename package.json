@@ -2,10 +2,10 @@
 	"publisher": "marsi",
 	"name": "git-file-viewer-button",
 	"displayName": "Git File Viewer Button (GitHub, GitLab, Bitbucket)",
+	"description": "%description%",
 	"version": "2.0.1",
 	"private": true,
 	"packageManager": "pnpm@8.1.1",
-	"description": "Open the current file in GitHub, GitLab or Bitbucket through a button in the status bar.",
 	"author": "Luis Marsiglia <marsiglia.business@gmail.com>",
 	"license": "MIT",
 	"homepage": "https://github.com/marsidev/vscode-git-file-viewer-button#readme",
@@ -20,12 +20,13 @@
 		"Other"
 	],
 	"main": "./dist/index.js",
+	"l10n": "./l10n",
 	"icon": "res/icon.png",
 	"files": [
 		"dist"
 	],
 	"engines": {
-		"vscode": "^1.57.0"
+		"vscode": "^1.74.0"
 	},
 	"activationEvents": [
 		"onStartupFinished"
@@ -42,16 +43,22 @@
 		"pack": "vsce package --no-dependencies",
 		"test": "vitest",
 		"typecheck": "tsc --noEmit",
-		"release": "bumpp && pnpm run publish"
+		"release": "bumpp && pnpm run publish",
+		"l10n:gen": "npx @vscode/l10n-dev export --outDir ./l10n ./src"
+	},
+	"dependencies": {
+		"@vscode/l10n": "^0.0.13"
 	},
 	"devDependencies": {
 		"@antfu/ni": "^0.21.2",
 		"@types/absolute": "^0.0.29",
 		"@types/lodash.sortby": "^4.7.7",
 		"@types/node": "^18.15.11",
-		"@types/vscode": "^1.57.0",
+		"@types/vscode": "^1.74.0",
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
 		"@typescript-eslint/parser": "^5.57.1",
+		"@vscode/l10n-dev": "^0.0.23",
+		"@vscode/vsce": "^2.18.0",
 		"absolute": "^0.0.1",
 		"bumpp": "^9.1.0",
 		"eslint": "^8.37.0",
@@ -71,8 +78,7 @@
 		"tsup": "^6.7.0",
 		"typescript": "^5.0.3",
 		"vite": "^4.2.1",
-		"vitest": "^0.29.8",
-		"vsce": "^2.15.0"
+		"vitest": "^0.29.8"
 	},
 	"pnpm": {
 		"peerDependencyRules": {

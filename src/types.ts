@@ -27,3 +27,5 @@ export type AsyncReturnType<T extends (...args: any) => Promise<any>> = T extend
 	? R
 	: any
 /* eslint-enable @typescript-eslint/no-explicit-any */
+
+export type Provider = 'GitHub' | 'GitLab' | 'Bitbucket'

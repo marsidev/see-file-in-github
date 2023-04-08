@@ -1,5 +1,6 @@
 import vscode from 'vscode'
-import { AsyncReturnType } from '../types'
+import { AsyncReturnType, Provider } from '../types'
+import { labelByProvider, tooltipByProvider } from '../constants'
 import { getRemoteRepositoryUri } from './get-remote-repository-uri'
 
 export function updateStatusBarItem(
@@ -7,15 +8,15 @@ export function updateStatusBarItem(
 	result: AsyncReturnType<typeof getRemoteRepositoryUri>,
 ) {
 	if (result.success) {
-		const provider = result.logs.isGitLabRepo
+		const provider: Provider = result.logs.isGitLabRepo
 			? 'GitLab'
 			: result.logs.isBitbucketRepo
 			? 'Bitbucket'
 			: 'GitHub'
 
 		const icon = result.logs.isGitHubRepo ? '$(github)' : '$(file-symlink-file) '
-		item.text = `${icon} See in ${provider}`
-		item.tooltip = `See file in ${provider}`
+		item.text = `${icon} ${labelByProvider[provider]}`
+		item.tooltip = tooltipByProvider[provider]
 
 		return item.show()
 	}

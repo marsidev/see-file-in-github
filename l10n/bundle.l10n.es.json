@@ -1,0 +1,12 @@
+{
+	"See in GitHub": "Ver en GitHub",
+	"See in GitLab": "Ver en GitLab",
+	"See in Bitbucket": "Ver en Bitbucket",
+	"See file in GitHub": "Ver archivo en GitHub",
+	"See file in GitLab": "Ver archivo en GitLab",
+	"See file in Bitbucket": "Ver archivo en Bitbucket",
+	"Remote repository not found": "Repositorio remoto no encontrado",
+	"Branch not found": "Branch no encontrado",
+	"File not in workspace": "El archivo no está en el área de trabajo",
+	"This workspace is not a git repository": "El área de trabajo no es un repositorio git"
+}
